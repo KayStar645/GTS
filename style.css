@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 1000px;
+    height: 800px;
+    margin: 70px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    
+    overflow: auto;
+}
+
+#img {
+    position: absolute;
+    top: 71px;
+    left: 70px;
+    opacity: 0.9;
+    width: 1000px;
+    z-index: 1;
+    height: 800px;
+    border: 1px solid #000;
+}
+
+#line {
+    width: 1300px;
+    height: 700px;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    text-align: center;
+    /* border: 1px solid #000; */
+    padding: 14px;
+    position: relative;
+    z-index: 10;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.tb {
+    padding: 10px 4px;
+    width: 200px;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 4px;
+    top: 0;
+    left: 70%;
+    display: none;
+    z-index: 1000;
+}
+
+.cell:hover .tb,
+.tb:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.content{
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* background-color: blue; */
+}
+
+svg {
+    position: absolute;
+    width: 1000px;
+    /* background-color: #f3f3f3;
+    opacity: 0.5; */
+    height: 800px;
+    background-color: transparent;
+    z-index: 10;
+    
+}
+
+
+/* INFO nè */
+#info {
+    width: 400px;
+    height: 800px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 70px;
+    left: 1070px;
+}
+
+h1 {
+    background-color: aqua;
+    text-align: center;
+    padding: 8px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 4px 8px;
+}
+
+.input {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    padding: 12px 24px;
+}
+
+.info_div {
+    padding: 0 2%;
+}
+
+.input1 {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+select {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: aqua;
+    outline: none;
+    border: 1px solid #888;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result {
+    width: 1400px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+}
+
+#tour0, #tour, #cost {
+    font-weight: 600;
+    background-color: yellow;
+    padding: 10px 20px;
+    color: red;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án trí tuệ nhân tạo - GTS - Tìm chu trình đi du lịch</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="container">
+        <svg id="svg"></svg>
+    </div>
+    <img id="img" src="./map-hcm.jpg" />
+    <div id="info">
+        <div class="info_div info_div_tb">
+            <h1>THÔNG TIN</h1>
+            <table id="location" border="1" width="100%"></table>
+        </div>
+        
+        <div class="info_div">
+            <h1>LỰA CHỌN</h1>
+            <!-- <div class="input">
+                <label for="select">Chọn file:</label>
+                <input id="file" type="file" />
+            </div> -->
+            <div class="input">
+                <label for="select">Bắt đầu</label>
+                <select name="select" id="select">
+                </select>
+            </div>
+            <div class="input1">
+                <button onclick="search()">TÌM KIẾM (GTS1)</button>
+            </div>
+            <div class="input1">
+                <button onclick="search2()">TÌM KIẾM (GTS2)</button>
+            </div>
+        </div>   
+    </div>
+    <div class="result">
+        <h1>KẾT QUẢ</h1>
+        <label>Tour theo mã: </label>
+        <p id="tour0"></p>
+
+        <label>Đường đi: </label>
+        <p id="tour"></p>
+        <label>Chi phí: </label>
+        <p id="cost"></p>
+    </div>  
+
+    <script src="./info.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
